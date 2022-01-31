@@ -6,7 +6,7 @@ const getData = async function(numUsers) {
     const data = await userRequest.json();
 
     const userResults = data.results;
-    displayUser(userResults);
+    displayUsers(userResults);
 };
 
 getData(1);
@@ -25,7 +25,7 @@ const displayUsers = function (userResults) {
         <img src=${imageUrl} alt="User avatar" />
     `;
     randomFolks.append(userDiv);
-    }
+  }
 };
 
 selectUserNumber.addEventListener("change", function (e) {
